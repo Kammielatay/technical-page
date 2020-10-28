@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+
+        <title>JavaScript</title>
+    </head>
+
+    <body>
+        <div>
+
+            <nav id="navbar">
+                <ul>
+                    <header id="nav-header">Basics of JavaScript</header>
+                    <hr>
+                    <a class="nav-link" href="#Introduction">
+                        <li>Introduction</li>
+                    </a>
+                    <a class="nav-link" href="#What_Is_JavaScript">
+                        <li>What is JavaScript</li>
+                    </a>
+                    <a class="nav-link" href="#Getting_Started">
+                        <li>Getting Started</li>
+                    </a>
+                    <a class="nav-link" href="#Basics">
+                        <li>Basics</li>
+                    </a>
+                    <a class="nav-link" href="#Comments">
+                        <li>Comments</li>
+                    </a>
+                    <a class="nav-link" href="#Declarations">
+                        <li>Declarations</li>
+                    </a>
+                    <a class="nav-link" href="#Naming_Variables">
+                        <li>Naming Variables</li>
+                    </a>
+
+
+                </ul>
+            </nav>
+        </div>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>
+                    <h2>Introduction</h2>
+                </header>
+                <p>JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with
+                    first-class functions.
+                    While it is most well-known as the scripting language for Web pages, many non-browser environments
+                    also use it, such as
+                    Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm,
+                    single-threaded, dynamic
+                    language, supporting object-oriented, imperative, and declarative (e.g. functional programming)
+                    styles.</p>
+
+                <p>Do not confuse JavaScript with the Java programming language. Both "Java" and "JavaScript" are
+                    trademarks or registered
+                    trademarks of Oracle in the U.S. and other countries. However, the two programming languages have a
+                    very different
+                    syntax, semantic, and use.</p>
+
+                <h4>What you should already know:</h4>
+                <p>This guide assumes you have the following basic background:</p>
+                <ul>
+                    <li>A general understanding of the Internet and the World Wide Web.</li>
+                    <li>Good working knowledge of HyperText Markup Language.</li>
+                    <li>Some programming experience.</li>
+                </ul>
+
+            </section>
+            <hr>
+            <section class="main-section" id="What_Is_JavaScript">
+                <header>
+                    <h2>What is JavaScript</h2>
+                </header>
+                <p>JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive
+                    (e.g., having
+                    complex animations, clickable buttons, popup menus, etc.). JavaScript contains a standard library of
+                    objects, such as Array, Date, and Math, and a core set of language elements
+                    such as operators, control structures, and statements.</p>
+
+            </section>
+            <hr>
+            <section class="main-section" id="Getting_Started">
+                <header>
+                    <h2>Getting Started</h2>
+                </header>
+                <p>Getting started with JavaScript is easy: all you need is a modern Web browser. All web browsers come
+                    with developer tools. Simply right click the screen on Google Chrome and click inspect. A box at the
+                    bottom of the screen will appear. Under the table "Console" you can execute JavaScript expressions
+                    in the current page. </p>
+            </section>
+            <hr>
+            <section class="main-section" id="Basics">
+                <header>
+                    <h2>Basics</h2>
+                </header>
+                <p>JavaScript borrows most of its syntax from Java, C, and C++, but it has also been influenced by Awk,
+                    Perl, and Python.</p>
+                <p>JavaScript is case-sensitive and uses the Unicode character set. For example, the word Früh (which
+                    means "early" in
+                    German) could be used as a variable name.</p>
+                <code>let Früh = "foobar"</code>
+                <p>But, the variable <span>früh</span> is not the same as <span>Früh</span> because JavaScript is case
+                    sensitive.</p>
+                <p>In JavaScript, instructions are called statements and are separated by semicolons (;).</p>
+                <p>A semicolon is not necessary after a statement if it is written on its own line. But if more than one
+                    statement on a
+                    line is desired, then they must be separated by semicolons.
+                    It is considered best practice, however, to always write a semicolon after a statement, even when it
+                    is not strictly
+                    needed. This practice reduces the chances of bugs getting into the code.</p>
+                <p>
+                    The source text of JavaScript script gets scanned from left to right, and is converted into a
+                    sequence of input elements
+                    which are tokens, control characters, line terminators, comments, or whitespace. (Spaces, tabs, and
+                    newline characters
+                    are considered whitespace.)</p>
+            </section>
+            <hr>
+            <section class="main-section" id="Comments">
+                <header>
+                    <h2>Comments</h2>
+                </header>
+                <p>The syntax of comments is the same as in C++ and in many other languages:</p>
+
+                <code>
+                    // a one line comment <br>
+                    
+                    /* this is a longer, <br>
+                    * multi-line comment
+                    */ 
+                    <br>
+                    
+                    /* You can't, however, /* nest comments */ SyntaxError */
+                </code>
+            </section>
+            <hr>
+            <section class="main-section" id="Declarations">
+                <header>
+                    <h2>Declarations</h2>
+                </header>
+                <p>JavaScript has three kinds of variable declarations.</p>
+                <p><span>var</span>: Declares a variable, optionally initializing it to a value.</p>
+                <code>
+                        var fruit = "apple"
+                    </code>
+                <p><span>let</span>: Declares a block-scoped, local variable, optionally initializing it to a value.</p>
+                <code>
+                        let favoriteFood = "Chicken Tacos"
+                    </code>
+                <p><span>const</span>: Declares a block-scoped, read-only named constant.</p>
+                <code>
+                        const favoriteMovie = "How the Grinch Stole Christmas"
+                    </code>
+
+            </section>
+            <hr>
+            <section class="main-section" id="Naming_Variables">
+                <header>
+                    <h2>Naming Variables</h2>
+                </header>
+                <p>You use variables as symbolic names for values in your application. The names of variables, called
+                    identifiers, conform
+                    to certain rules.</p>
+                <ul>
+                    <li>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($). Subsequent
+                        characters can also be
+                        digits (0-9).</li>
+                    <li>Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase)
+                        as well as "a" through
+                        "z" (lowercase).</li>
+                    <li>Some examples of legal names are Number_hits, temp99, $credit, and _name.</li>
+                </ul>
+            </section>
+            <hr>
+            <div>
+                <p>**All information was taken from <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction">MDN web
+                        Docs</a>**</p>
+            </div>
+
+        </main>
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+
+</html>
